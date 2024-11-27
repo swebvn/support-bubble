@@ -1,10 +1,15 @@
 <script setup>
+import { ref } from 'vue';
+import ContactForm from './ContactForm.vue';
+
 const props = defineProps({
   show: Boolean,
   urls: Object,
 })
 
 const emit = defineEmits(['close'])
+
+const showContactForm = ref(false)
 
 const closeModal = () => {
   emit('close')
@@ -26,8 +31,9 @@ const closeModal = () => {
         <strong style="text-transform: uppercase;">How can we help you?</strong>
         <p>Contact us and let us know how we can help you.</p>
         <a class="button button-secondary" :href="urls.faqs">FAQs</a>
-        <a class="button button-primary" :href="urls.contact">CONTACT US NOW</a>
         <a class="button button-secondary" :href="urls.tracking">TRACKING ORDER</a>
+        <a class="button button-primary" @click="showContactForm = !showContactForm">CONTACT US NOW</a>
+        <ContactForm v-show="showContactForm" />
         <p>
           Thank you for your interest our stuff. <br>
           If you have any problem <strong>PLEASE CONTACT US FIRST</strong>, We will support your issue ASAP
