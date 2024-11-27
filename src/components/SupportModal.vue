@@ -25,11 +25,9 @@ const closeModal = () => {
 
         <strong style="text-transform: uppercase;">How can we help you?</strong>
         <p>Contact us and let us know how we can help you.</p>
-        <ul>
-          <li><a :href="urls.faqs">FAQs</a></li>
-          <li><a :href="urls.contact">CONTACT US NOW</a></li>
-          <li><a :href="urls.tracking">TRACKING ORDER</a></li>
-        </ul>
+        <a class="button button-secondary" :href="urls.faqs">FAQs</a>
+        <a class="button button-primary" :href="urls.contact">CONTACT US NOW</a>
+        <a class="button button-secondary" :href="urls.tracking">TRACKING ORDER</a>
         <p>
           Thank you for your interest our stuff. <br>
           If you have any problem <strong>PLEASE CONTACT US FIRST</strong>, We will support your issue ASAP
@@ -76,14 +74,41 @@ const closeModal = () => {
   color: black;
   cursor: pointer;
 }
+
 .close svg {
   width: 24px;
   height: 24px;
 }
 
+.button {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
 a {
-  color: blue;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.button-primary {
+  background-color: black;
+  color: white;
+}
+
+.button-secondary {
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.button:hover {
+  opacity: 0.8;
 }
 
 .fade-enter-active,
