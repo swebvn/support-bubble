@@ -1,10 +1,13 @@
 # support-bubble
 
-This template should help get you started developing with Vue 3 in Vite.
+The common support bubble for TDA websites;
 
-## Recommended IDE Setup
+## Usage
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Simple put the following script tag right before </body> tag in your HTML file.
+```html
+<script type="text/javascript" src="//domain/support-bubble.js" async></script>
+```
 
 ## Customize configuration
 
