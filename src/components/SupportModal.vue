@@ -82,6 +82,7 @@ const closeModal = () => {
 
 a {
   color: blue;
+  text-decoration: underline;
 }
 
 .fade-enter-active,
