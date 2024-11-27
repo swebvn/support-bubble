@@ -16,14 +16,20 @@ const closeModal = () => {
     <div v-if="show" id="support-modal" @click="closeModal">
       <div class="modal-content" @click.stop>
         <!-- close button -->
-        <span class="close" @click="closeModal">&times;</span>
+        <span class="close" @click="closeModal">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </span>
+
         <strong style="text-transform: uppercase;">How can we help you?</strong>
         <p>Contact us and let us know how we can help you.</p>
         <ul>
           <li><a :href="urls.faqs">FAQs</a></li>
           <li><a :href="urls.contact">CONTACT US NOW</a></li>
           <li><a :href="urls.tracking">TRACKING ORDER</a></li>
-          </ul>
+        </ul>
         <p>
           Thank you for your interest our stuff. <br>
           If you have any problem <strong>PLEASE CONTACT US FIRST</strong>, We will support your issue ASAP
@@ -66,7 +72,12 @@ const closeModal = () => {
   position: absolute;
   top: 10px;
   right: 10px;
+  color: black;
   cursor: pointer;
+}
+.close svg {
+  width: 24px;
+  height: 24px;
 }
 
 a {
