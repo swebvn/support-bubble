@@ -1,7 +1,7 @@
 <script setup>
 // get the current domain
 const domain = window.location.hostname;
-const embedUrl = `https://maiden.customedge.co/tickets/create?store=${domain}`;
+const embedUrl = `https://maiden.customedge.co/tickets/create?domain=${domain}`;
 
 </script>
 
