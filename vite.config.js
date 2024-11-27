@@ -13,7 +13,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        entryFileNames: 'dist/support-bubble.js',
+        entryFileNames: 'support-bubble.js',
         format: 'iife',
         name: 'SupportBubble',
       }
