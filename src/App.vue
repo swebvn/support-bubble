@@ -1,11 +1,37 @@
 <script setup>
-import SupportBubble from './components/SupportBubble.vue'
+import { ref } from 'vue';
+import SupportModal from './components/SupportModal.vue';
+
+const showModal = ref(false)
+
+const toggleModal = () => {
+  showModal.value = !showModal.value
+}
 </script>
 
 <template>
-  <main>hello world</main>
-  <SupportBubble />
+  <button role="button" id="support-bubble" @click="toggleModal">
+    Question? Let us help you
+  </button>
+  <SupportModal :show="showModal" :urls="{
+    faqs: '/faqs',
+    contact: '/contact',
+    tracking: '/tracking'
+  }" @close="toggleModal" />
 </template>
 
 <style>
+button#support-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  z-index: 6969;
+}
 </style>

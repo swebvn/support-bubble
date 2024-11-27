@@ -1,6 +1,7 @@
 <script setup>
 const props = defineProps({
-  show: Boolean
+  show: Boolean,
+  urls: Object,
 })
 
 const emit = defineEmits(['close'])
@@ -12,10 +13,21 @@ const closeModal = () => {
 
 <template>
   <transition name="fade">
-    <div v-if="show" id="support-modal">
-      <div class="modal-content">
+    <div v-if="show" id="support-modal" @click="closeModal">
+      <div class="modal-content" @click.stop>
+        <!-- close button -->
         <span class="close" @click="closeModal">&times;</span>
-        <p>Support content goes here...</p>
+        <strong style="text-transform: uppercase;">How can we help you?</strong>
+        <p>Contact us and let us know how we can help you.</p>
+        <ul>
+          <li><a :href="urls.faqs">FAQs</a></li>
+          <li><a :href="urls.contact">CONTACT US NOW</a></li>
+          <li><a :href="urls.tracking">TRACKING ORDER</a></li>
+          </ul>
+        <p>
+          Thank you for your interest our stuff. <br>
+          If you have any problem <strong>PLEASE CONTACT US FIRST</strong>, We will support your issue ASAP
+        </p>
       </div>
     </div>
   </transition>
@@ -35,11 +47,19 @@ const closeModal = () => {
 }
 
 .modal-content {
+  position: relative;
   background-color: white;
-  padding: 20px;
+  padding: 2rem;
   border-radius: 10px;
   width: 300px;
-  text-align: center;
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-content {
+    width: 696px;
+  }
 }
 
 .close {
@@ -49,11 +69,13 @@ const closeModal = () => {
   cursor: pointer;
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.32s;
 }
 
-.fade-enter-from, .fade-leave-to {
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
 }
 </style>
