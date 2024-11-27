@@ -20,7 +20,7 @@ const toggleModal = () => {
   }" @close="toggleModal" />
 </template>
 
-<style>
+<style scoped>
 button#support-bubble {
   position: fixed;
   bottom: 20px;

@@ -39,7 +39,7 @@ const closeModal = () => {
   </transition>
 </template>
 
-<style>
+<style scoped>
 #support-modal {
   position: fixed;
   top: 0;
