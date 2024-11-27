@@ -29,6 +29,7 @@ button#support-bubble {
   color: white;
   padding: 10px 20px;
   border-radius: 50px;
+  font-size: 14px;
   cursor: pointer;
   border: 0;
   outline: 0;
