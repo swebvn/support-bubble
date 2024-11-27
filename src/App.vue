@@ -15,8 +15,8 @@ const toggleModal = () => {
   </button>
   <SupportModal :show="showModal" :urls="{
     faqs: '/customer-help',
-    contact: '/contact',
-    tracking: '/tracking'
+    contact: '/contact-us',
+    tracking: '/tracking-order'
   }" @close="toggleModal" />
 </template>
 
