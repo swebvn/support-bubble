@@ -53,7 +53,7 @@ const closeModal = () => {
   border-radius: 10px;
   width: 300px;
   text-align: left;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -67,6 +67,10 @@ const closeModal = () => {
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+
+a {
+  color: blue;
 }
 
 .fade-enter-active,
