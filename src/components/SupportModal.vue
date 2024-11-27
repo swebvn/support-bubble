@@ -54,6 +54,7 @@ const closeModal = () => {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 6969;
 }
 
 .modal-content {

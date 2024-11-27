@@ -32,6 +32,6 @@ button#support-bubble {
   cursor: pointer;
   border: 0;
   outline: 0;
-  z-index: 6969;
+  z-index: 100;
 }
 </style>
