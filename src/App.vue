@@ -25,7 +25,7 @@ button#support-bubble {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007bff;
+  background-color: black;
   color: white;
   padding: 10px 20px;
   border-radius: 50px;
