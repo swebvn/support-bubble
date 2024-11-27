@@ -57,7 +57,8 @@ const closeModal = () => {
   background-color: white;
   padding: 2rem;
   border-radius: 10px;
-  width: 300px;
+  min-width: 300px;
+  width: 100%;
   text-align: left;
   line-height: 2rem;
 }
