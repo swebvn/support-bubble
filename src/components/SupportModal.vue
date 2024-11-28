@@ -66,6 +66,8 @@ const closeModal = () => {
   width: 100%;
   text-align: left;
   line-height: 2rem;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
 }
 
 @media screen and (min-width: 768px) {
