@@ -34,5 +34,7 @@ button#support-bubble {
   border: 0;
   outline: 0;
   z-index: 100;
+  line-height: 1rem;
+  height: auto;
 }
 </style>
