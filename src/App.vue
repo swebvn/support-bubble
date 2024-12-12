@@ -23,13 +23,13 @@ const toggleModal = () => {
 <style scoped>
 button#support-bubble {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 0.5rem;
+  right: 0.5rem;
   background-color: black;
   color: white;
-  padding: 10px 20px;
+  padding: 0.5rem 1rem;
   border-radius: 50px;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
   border: 0;
   outline: 0;
