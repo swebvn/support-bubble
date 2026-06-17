@@ -40,6 +40,7 @@ button#support-bubble {
   line-height: 1rem;
   height: auto;
   text-transform: capitalize;
+  font-weight: 700;
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
