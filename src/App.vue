@@ -39,14 +39,16 @@ button#support-bubble {
   z-index: 100;
   line-height: 1rem;
   height: auto;
+  text-transform: capitalize;
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
 }
 
 .support-bubble-icon {
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 3px;
   flex-shrink: 0;
 }
 </style>
