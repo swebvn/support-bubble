@@ -11,7 +11,7 @@ const toggleModal = () => {
 
 <template>
   <button role="button" id="support-bubble" @click="toggleModal">
-    Question? Let us help you
+    <i class="fas fa-question-circle"></i> Help
   </button>
   <SupportModal :show="showModal" :urls="{
     faqs: '/customer-help',
